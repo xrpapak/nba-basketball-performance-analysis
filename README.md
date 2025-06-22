@@ -1,4 +1,4 @@
-# Basketball Player & Team Performance Analysis (SQL Only)
+# Basketball Player & Team Performance Analysis
 
 ## 🌍 Project Overview
 This project explores historical basketball data using only SQL to uncover insights about player performance, consistency, team scoring dynamics, and player classification. The objective is to demonstrate both advanced SQL skills and analytical thinking through meaningful patterns and data-driven storytelling.
@@ -63,7 +63,7 @@ FROM (
 
 ---
 
-### 5. Average age in first season
+### 5. Average age in the first season
 ```sql
 WITH first_appearance AS (
   SELECT Player, MIN(Year) AS first_year
@@ -224,7 +224,7 @@ WHERE top2 IS NOT NULL
 ORDER BY diff ASC
 LIMIT 10;
 ```
-**Insight:** Some teams like MEM 2013 had scoring duos nearly identical in output.
+**Insight:** Some teams, like MEM 2013, had scoring duos nearly identical in output.
 
 ---
 
@@ -246,7 +246,7 @@ FROM player_pts_stddev
 ORDER BY consistency_ratio ASC
 LIMIT 10;
 ```
-**Insight:** LeBron James among the most consistent scorers across long careers.
+**Insight:** LeBron James is among the most consistent scorers across long careers.
 
 ---
 
@@ -349,7 +349,7 @@ ORDER BY count_players DESC;
 ---
 
 ## 📊 Final Thoughts
-This project illustrates how pure SQL — when combined with strategic analysis — can powerfully uncover stories hidden in data. It’s also an example of using data contextually: not just querying for numbers, but explaining what those numbers **mean**.
+This project illustrates how pure SQL (when combined with strategic analysis) can powerfully uncover stories hidden in data. It’s also an example of using data contextually: not just querying for numbers, but explaining what those numbers **mean**.
 
 ---
 
