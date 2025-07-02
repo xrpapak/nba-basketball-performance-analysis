@@ -1,19 +1,19 @@
 # Basketball Player & Team Performance Analysis
 
-## 🌍 Project Overview
+## Project Overview
 This project explores historical basketball data using only SQL to uncover insights about player performance, consistency, team scoring dynamics, and player classification. The objective is to demonstrate both advanced SQL skills and analytical thinking through meaningful patterns and data-driven storytelling.
 
 All queries were executed in **Google BigQuery**, and the dataset includes career and seasonal stats for over 3,900 players.
 
 ---
 
-## 🔢 Dataset Tables
+## Dataset Tables
 - `players`: Player-level information (height, weight, birth year, etc.)
 - `season_stats`: Player performance per season (PTS, AST, TRB, etc.)
 
 ---
 
-## 🔍 Section 1: Basic SQL Exploration
+## Section 1: Basic SQL Exploration
 
 ### 1. How many unique players exist in the dataset?
 ```sql
@@ -83,7 +83,7 @@ FROM joined;
 
 ---
 
-## 📊 Section 2: Player Performance with Window Functions
+## Section 2: Player Performance with Window Functions
 
 ### 6. Rolling average (last 3 seasons) of player points
 ```sql
@@ -141,7 +141,7 @@ LIMIT 10;
 
 ---
 
-## 🏋️ Section 3: Team-Level Scoring Insights
+## Section 3: Team-Level Scoring Insights
 
 ### 10. Highest team scoring totals in a single season
 ```sql
@@ -228,7 +228,7 @@ LIMIT 10;
 
 ---
 
-## 🔄 Section 4: Advanced Analytical Queries
+## Section 4: Advanced Analytical Queries
 
 ### 14. Most consistent scorers (low standard deviation in PTS)
 ```sql
@@ -318,7 +318,7 @@ LIMIT 10;
 
 ---
 
-## 📆 Section 5: Player Classification (Type)
+## Section 5: Player Classification (Type)
 
 ### 19. Categorize players into "Scorer", "Playmaker", "Rebounder", "All-Arounder", or "Role Player"
 ```sql
@@ -348,7 +348,7 @@ ORDER BY count_players DESC;
 
 ---
 
-## 📊 Final Thoughts
+## Final Thoughts
 This project illustrates how pure SQL (when combined with strategic analysis) can powerfully uncover stories hidden in data. It’s also an example of using data contextually: not just querying for numbers, but explaining what those numbers **mean**.
 
 ---
